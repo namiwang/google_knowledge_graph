@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+
 require 'google_knowledge_graph/version'
 
 Gem::Specification.new do |s|
@@ -13,4 +15,7 @@ Gem::Specification.new do |s|
   }
 
   s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'webmock', '~> 3.0'
+
+  s.add_runtime_dependency 'http', '~> 4.0'
 end

@@ -1,8 +1,17 @@
 require 'spec_helper'
 
 describe GoogleKnowledgeGraph do
+  let (:entity_data) { File.read('spec/fixtures/entity.json') }
+
   before :each do
     GoogleKnowledgeGraph.api_key = nil
+
+    stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=fakeid&key=foo&limit=1')
+      .to_return(status: 400)
+
+    stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=/m/05pbsry&key=foo&limit=1')
+      .to_return(status: 200, body: entity_data)
+
   end
 
   context 'Version' do
@@ -38,8 +47,13 @@ describe GoogleKnowledgeGraph do
         }.to raise_error 'InvalidIdStartingWithKG'
       end
 
-      pending 'returns an entity'
-      pending 'returns nil for failed request'
+      it 'returns an entity' do
+        expect(GoogleKnowledgeGraph.get '/m/05pbsry').to be_a GoogleKnowledgeGraph::Entity
+      end
+
+      it 'returns nil for failed request' do
+        expect(GoogleKnowledgeGraph.get 'fakeid').to be_nil
+      end
     end
 
     describe '#self.search' do
