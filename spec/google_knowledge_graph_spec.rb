@@ -11,7 +11,6 @@ describe GoogleKnowledgeGraph do
 
     stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=/m/05pbsry&key=foo&limit=1')
       .to_return(status: 200, body: entity_data)
-
   end
 
   context 'Version' do
