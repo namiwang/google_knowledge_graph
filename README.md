@@ -1,5 +1,7 @@
 # google knowledge graph client
 
+![Gem](https://img.shields.io/gem/v/google_knowledge_graph)
+
 A ruby client for Google's knowledge graph to:
 - getting a knowledge entity by id
 - searching entities, while set limits by types, languages, and score
