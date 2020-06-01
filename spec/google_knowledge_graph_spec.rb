@@ -6,7 +6,9 @@ describe GoogleKnowledgeGraph do
   end
 
   context 'Version' do
-    pending 'claims a version'
+    it 'claims a version' do
+      expect(GoogleKnowledgeGraph::VERSION).not_to be_nil
+    end
   end
 
   context 'Configuration' do

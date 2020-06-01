@@ -1,4 +1,6 @@
-class GoogleKnowledgeGraph
+require 'google_knowledge_graph/entity'
+
+module GoogleKnowledgeGraph
   @api_key = nil
 
   class << self
