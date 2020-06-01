@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe GoogleKnowledgeGraph do
+  before :each do
+    GoogleKnowledgeGraph.api_key = nil
+  end
+
   context 'Version' do
     pending 'claims a version'
   end
@@ -13,8 +17,25 @@ describe GoogleKnowledgeGraph do
   end
 
   context 'Fetching knowledge entity' do
+    before :each do
+      GoogleKnowledgeGraph.api_key = 'foo'
+    end
+
     describe '#self.get' do
-      pending 'raises error for empty api_key'
+      it 'raises error for empty api_key' do
+        GoogleKnowledgeGraph.api_key = nil
+
+        expect {
+          GoogleKnowledgeGraph.get 'some_id'
+        }.to raise_error 'EmptyAPIKey'
+      end
+
+      it 'raise error for id starting with `kg:`' do
+        expect {
+          GoogleKnowledgeGraph.get 'kg:/m/05pbsry'
+        }.to raise_error 'InvalidIdStartingWithKG'
+      end
+
       pending 'returns an entity'
       pending 'returns nil for failed request'
     end

@@ -30,6 +30,9 @@ GoogleKnowledgeGraph.api_key = 'foo'
 
 ### getting knowledge entity by id
 
+> google knowledge graph responses entity result with @id like `kg:/m/0dl567`,
+  yet it expects id being `/m/0dl567` when querying the service
+
 ```
 entity = GoogleKnowledgeGraph.get '/m/05pbsry'
 
