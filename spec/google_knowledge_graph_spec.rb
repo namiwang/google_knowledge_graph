@@ -42,7 +42,9 @@ describe GoogleKnowledgeGraph do
         stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=/m/05pbsry&key=foo&limit=1')
           .to_return(status: 200, body: File.read('spec/fixtures/getting_entity.json'))
 
-        expect(GoogleKnowledgeGraph.get '/m/05pbsry').to be_a GoogleKnowledgeGraph::Entity
+        entity = GoogleKnowledgeGraph.get '/m/05pbsry'
+        expect(entity).to be_a GoogleKnowledgeGraph::Entity
+        expect(entity.name).to eq 'Community'
       end
 
       it 'returns nil for bad request' do

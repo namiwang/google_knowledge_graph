@@ -21,8 +21,9 @@ module GoogleKnowledgeGraph
       )
 
       return nil unless response.status.success?
+      return nil unless data = JSON.parse(response.body).dig('itemListElement', 0, 'result')
 
-      Entity.new(response.body)
+      Entity.new(data)
     end
 
     def search query, types: []
