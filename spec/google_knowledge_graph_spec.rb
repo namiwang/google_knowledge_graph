@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe GoogleKnowledgeGraph do
-  let (:entity_data) { File.read('spec/fixtures/entity.json') }
-
   before :each do
     GoogleKnowledgeGraph.api_key = nil
 
@@ -10,7 +8,7 @@ describe GoogleKnowledgeGraph do
       .to_return(status: 400)
 
     stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=/m/05pbsry&key=foo&limit=1')
-      .to_return(status: 200, body: entity_data)
+      .to_return(status: 200, body: File.read('spec/fixtures/getting_entity.json'))
   end
 
   context 'Version' do
@@ -62,14 +60,5 @@ describe GoogleKnowledgeGraph do
       pending 'provides an option `languages` to set languages'
       pending 'provides an option `limit` to limit the amount of results'
     end
-  end
-
-  context 'Parsing knowledge entity' do
-    pending 'provides #data'
-    pending 'provides #id'
-    pending 'provides #name'
-    pending 'provides #description'
-    pending 'provides #url'
-    pending 'provides #image'
   end
 end

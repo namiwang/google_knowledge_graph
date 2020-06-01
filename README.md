@@ -36,8 +36,26 @@ GoogleKnowledgeGraph.api_key = 'foo'
 ```
 entity = GoogleKnowledgeGraph.get '/m/05pbsry'
 
+# the `data` field contains the original payload
 entity.data
 => {
+  "url": "http://www.nbc.com/community-show/",
+  "detailedDescription": {
+    "url": "https://en.wikipedia.org/wiki/Community_(TV_series)",
+    "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+    "articleBody": "Community is an American sitcom television series created by Dan Harmon that aired on NBC and Yahoo! Screen from September 17, 2009, to June 2, 2015. "
+  },
+  "@id": "kg:/m/05pbsry",
+  "name": "Community",
+  "@type": [
+    "Thing",
+    "TVSeries"
+  ],
+  "description": "American sitcom",
+  "image": {
+    "url": "https://www.wikiwand.com/en/Community_(TV_series)",
+    "contentUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfDLB01VDeWHLm-4R68LHym6-RzrQxe2PJF9aLNDw96kL7D-2"
+  }
 }
 ```
 
@@ -48,6 +66,48 @@ entity.data
 For your convenience, there're a few shorthand methods to `dig` into the data
 
 ```
+entity.id
+=> 'kg:/m/05pbsry'
+
+entity.id_without_prefix
+=> '/m/05pbsry'
+
+entity.id_without_prefix
+=> '/m/05pbsry'
+
+entity.types
+=> ['Thing', 'TVSeries']
+
+entity.name
+=> 'Community'
+
+entity.url
+=> 'http://www.nbc.com/community-show/'
+
+entity.image
+=> {
+  'url': 'https://www.wikiwand.com/en/Community_(TV_series)',
+  'contentUrl': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfDLB01VDeWHLm-4R68LHym6-RzrQxe2PJF9aLNDw96kL7D-2'
+}
+
+entity.image_url # data.dig 'image', 'contentUrl'
+=> 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfDLB01VDeWHLm-4R68LHym6-RzrQxe2PJF9aLNDw96kL7D-2'
+
+entity.description
+=> 'American sitcom'
+
+entity.detailed_description
+=> {
+  'license': 'https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License',
+  'articleBody': 'Community is an American sitcom television series created by Dan Harmon that aired on NBC and Yahoo! Screen from September 17, 2009, to June 2, 2015. ',
+  'url': 'https://en.wikipedia.org/wiki/Community_(TV_series)'
+}
+
+entity.description_text # data.dig 'detailedDescription', 'articleBody'
+=> 'Community is an American sitcom television series created by Dan Harmon that aired on NBC and Yahoo! Screen from September 17, 2009, to June 2, 2015. '
+
+entity.description_url # data.dig 'detailedDescription', 'url'
+=> 'https://en.wikipedia.org/wiki/Community_(TV_series)'
 ```
 
 ### searching entities

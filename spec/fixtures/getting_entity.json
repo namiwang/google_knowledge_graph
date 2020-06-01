@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "goog": "http://schema.googleapis.com/",
+    "kg": "http://g.co/kg",
+    "resultScore": "goog:resultScore",
+    "EntitySearchResult": "goog:EntitySearchResult",
+    "@vocab": "http://schema.org/",
+    "detailedDescription": "goog:detailedDescription"
+  },
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "EntitySearchResult",
+      "result": {
+        "url": "http://www.nbc.com/community-show/",
+        "detailedDescription": {
+          "url": "https://en.wikipedia.org/wiki/Community_(TV_series)",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+          "articleBody": "Community is an American sitcom television series created by Dan Harmon that aired on NBC and Yahoo! Screen from September 17, 2009, to June 2, 2015. "
+        },
+        "@id": "kg:/m/05pbsry",
+        "name": "Community",
+        "@type": [
+          "Thing",
+          "TVSeries"
+        ],
+        "description": "American sitcom",
+        "image": {
+          "url": "https://www.wikiwand.com/en/Community_(TV_series)",
+          "contentUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfDLB01VDeWHLm-4R68LHym6-RzrQxe2PJF9aLNDw96kL7D-2"
+        }
+      },
+      "resultScore": 0
+    }
+  ]
+}
