@@ -1,0 +1,296 @@
+{
+  "@context": {
+    "kg": "http://g.co/kg",
+    "@vocab": "http://schema.org/",
+    "goog": "http://schema.googleapis.com/",
+    "EntitySearchResult": "goog:EntitySearchResult",
+    "resultScore": "goog:resultScore",
+    "detailedDescription": "goog:detailedDescription"
+  },
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "resultScore": 4182.677734375,
+      "result": {
+        "name": "Community",
+        "image": {
+          "url": "https://zh.wikipedia.org/wiki/File:East_Asian_Community.svg",
+          "contentUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWLe5EY3TmNaXpA8MaaxounsLYmH_H0J8a8ypz9h_R8Vo4XnZ_"
+        },
+        "@type": [
+          "Thing"
+        ],
+        "@id": "kg:/m/01qls",
+        "detailedDescription": {
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+          "url": "https://en.wikipedia.org/wiki/Community",
+          "articleBody": "A community is a social unit with commonality such as norms, religion, values, customs, or identity. Communities may share a sense of place situated in a given geographical area or in virtual space through communication platforms. "
+        }
+      },
+      "@type": "EntitySearchResult"
+    },
+    {
+      "result": {
+        "@type": [
+          "Thing"
+        ],
+        "name": "Community",
+        "detailedDescription": {
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+          "url": "https://en.wikipedia.org/wiki/Community_(ecology)",
+          "articleBody": "In ecology, a community is a group or association of populations of two or more different species occupying the same geographical area at the same time, also known as a biocoenosis. The term community has a variety of uses. "
+        },
+        "@id": "kg:/g/120lq9cv"
+      },
+      "resultScore": 1027.097412109375,
+      "@type": "EntitySearchResult"
+    },
+    {
+      "@type": "EntitySearchResult",
+      "result": {
+        "@id": "kg:/m/05pbsry",
+        "@type": [
+          "Thing",
+          "TVSeries"
+        ],
+        "detailedDescription": {
+          "url": "https://en.wikipedia.org/wiki/Community_(TV_series)",
+          "articleBody": "Community is an American sitcom television series created by Dan Harmon that aired on NBC and Yahoo! Screen from September 17, 2009, to June 2, 2015. ",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License"
+        },
+        "name": "Community",
+        "image": {
+          "url": "https://www.wikiwand.com/en/Community_(TV_series)",
+          "contentUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfDLB01VDeWHLm-4R68LHym6-RzrQxe2PJF9aLNDw96kL7D-2"
+        },
+        "url": "http://www.nbc.com/community-show/",
+        "description": "American sitcom"
+      },
+      "resultScore": 967.75714111328125
+    },
+    {
+      "resultScore": 125.786506652832,
+      "result": {
+        "name": "Online community",
+        "@id": "kg:/m/09k4rpx",
+        "detailedDescription": {
+          "articleBody": "An online community, also called an internet community or web community, is a virtual community whose members interact with each other primarily via the Internet. ",
+          "url": "https://en.wikipedia.org/wiki/Online_community",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License"
+        },
+        "@type": [
+          "Thing"
+        ]
+      },
+      "@type": "EntitySearchResult"
+    },
+    {
+      "result": {
+        "@id": "kg:/g/11dxpv9v7r",
+        "@type": [
+          "Thing",
+          "Corporation",
+          "Organization"
+        ],
+        "name": "Shimmur, Inc.",
+        "description": "Company"
+      },
+      "resultScore": 95.504226684570312,
+      "@type": "EntitySearchResult"
+    },
+    {
+      "@type": "EntitySearchResult",
+      "resultScore": 94.383293151855469,
+      "result": {
+        "@type": [
+          "Thing"
+        ],
+        "@id": "kg:/m/0949wd",
+        "name": "Community",
+        "detailedDescription": {
+          "articleBody": "A community is an administrative division found in Belgium, Canada, Georgia, Greece, Iceland, Trinidad and Tobago, Ukraine, Wales, and the League of Nations Class A mandates.",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+          "url": "https://en.wikipedia.org/wiki/Community_(administrative_division)"
+        }
+      }
+    },
+    {
+      "@type": "EntitySearchResult",
+      "result": {
+        "name": "Community",
+        "@type": [
+          "Book",
+          "Thing"
+        ],
+        "description": "Book by Zygmunt Bauman",
+        "@id": "kg:/m/06rpcjb"
+      },
+      "resultScore": 89.038459777832031
+    },
+    {
+      "result": {
+        "detailedDescription": {
+          "url": "https://en.wikipedia.org/wiki/Community_(trade_union)",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+          "articleBody": "Community is a UK trade union which formed in 2004. The union represents workers in a diverse range of sectors, including iron and steel, domestic appliance manufacturing, clothing, textiles, footwear, road transport, betting and gaming and call centres, as well as workers in voluntary organisations, workshops for visually impaired and disabled people, community-care providers and housing associations. "
+        },
+        "name": "Community",
+        "image": {
+          "url": "https://en.wikipedia.org/wiki/Community_(trade_union)",
+          "contentUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9TJBpc9YXhLPiBLg6FjCKkMtxPh0pCqRW9rU8vi93K7NtXbUO"
+        },
+        "@id": "kg:/m/09w295",
+        "@type": [
+          "Thing",
+          "Organization"
+        ],
+        "description": "Trade union"
+      },
+      "resultScore": 54.606101989746087,
+      "@type": "EntitySearchResult"
+    },
+    {
+      "resultScore": 52.932155609130859,
+      "result": {
+        "@type": [
+          "Thing",
+          "Corporation",
+          "Organization"
+        ],
+        "description": "Company",
+        "@id": "kg:/g/11fy28qjb3",
+        "name": "Origin Bank"
+      },
+      "@type": "EntitySearchResult"
+    },
+    {
+      "result": {
+        "@type": [
+          "Thing"
+        ],
+        "@id": "kg:/m/04vzrb",
+        "name": "Community",
+        "detailedDescription": {
+          "articleBody": "A community is a division of land in Wales that forms the lowest tier of local government in Wales. Welsh communities are analogous to civil parishes in England. In 2016 there were 870 communities in Wales.\nUntil 1974 Wales was divided into civil parishes. ",
+          "url": "https://en.wikipedia.org/wiki/Community_(Wales)",
+          "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License"
+        }
+      },
+      "resultScore": 29.166910171508789,
+      "@type": "EntitySearchResult"
+    },
+    {
+      "resultScore": 7,
+      "result": {
+        "@id": "kg:/g/11jg4yxs03",
+        "name": "Community",
+        "@type": [
+          "Thing"
+        ]
+      },
+      "@type": "EntitySearchResult"
+    },
+    {
+      "resultScore": 7,
+      "result": {
+        "name": "Community",
+        "@id": "kg:/g/11b8c6hfq7",
+        "@type": [
+          "Thing"
+        ]
+      },
+      "@type": "EntitySearchResult"
+    },
+    {
+      "@type": "EntitySearchResult",
+      "resultScore": 7,
+      "result": {
+        "@id": "kg:/g/11j31d66yy",
+        "name": "Community",
+        "description": "Literary series",
+        "@type": [
+          "Thing",
+          "BookSeries"
+        ]
+      }
+    },
+    {
+      "result": {
+        "name": "Community",
+        "@id": "kg:/g/1q5j4dbr_",
+        "@type": [
+          "Thing"
+        ]
+      },
+      "resultScore": 7,
+      "@type": "EntitySearchResult"
+    },
+    {
+      "result": {
+        "name": "Community",
+        "@id": "kg:/g/11j60bn08p",
+        "@type": [
+          "Thing"
+        ]
+      },
+      "@type": "EntitySearchResult",
+      "resultScore": 7
+    },
+    {
+      "result": {
+        "@type": [
+          "Thing"
+        ],
+        "name": "Community",
+        "@id": "kg:/g/1q5jzbqnt"
+      },
+      "@type": "EntitySearchResult",
+      "resultScore": 7
+    },
+    {
+      "result": {
+        "name": "Community",
+        "@type": [
+          "Thing"
+        ],
+        "@id": "kg:/g/11j609507g"
+      },
+      "@type": "EntitySearchResult",
+      "resultScore": 7
+    },
+    {
+      "result": {
+        "name": "Community",
+        "@id": "kg:/g/11b6gpd__m",
+        "@type": [
+          "Thing"
+        ],
+        "description": "Fictional character"
+      },
+      "@type": "EntitySearchResult",
+      "resultScore": 7
+    },
+    {
+      "resultScore": 7,
+      "@type": "EntitySearchResult",
+      "result": {
+        "@id": "kg:/g/11h4ck18mm",
+        "@type": [
+          "Thing"
+        ],
+        "name": "Community"
+      }
+    },
+    {
+      "resultScore": 7,
+      "@type": "EntitySearchResult",
+      "result": {
+        "name": "Community",
+        "@id": "kg:/g/11hc_qh9dn",
+        "@type": [
+          "Thing"
+        ]
+      }
+    }
+  ]
+}

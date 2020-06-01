@@ -113,14 +113,31 @@ entity.description_url # data.dig 'detailedDescription', 'url'
 ### searching entities
 
 ```
+GoogleKnowledgeGraph.search 'community'
+=> [
+  {
+    entity: …,
+    score: 1000,
+  },
+  {
+    entity: …,
+    score: 800,
+  },
+  …
+]
 ```
 
 #### options
 
-> For detail of the options, see [the reference](https://developers.google.com/knowledge-graph/reference/rest/v1)
+```
+GoogleKnowledgeGraph.search 'community', types: ['TVSeries']
+=> [
+  …
+]
+```
 
-- limit
-- types
+> Currently, `types` is the only option being supported.
+> For detail of the options, see [the reference](https://developers.google.com/knowledge-graph/reference/rest/v1).
 
 ## Development
 

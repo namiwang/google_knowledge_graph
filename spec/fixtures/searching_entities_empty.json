@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "detailedDescription": "goog:detailedDescription",
+    "EntitySearchResult": "goog:EntitySearchResult",
+    "goog": "http://schema.googleapis.com/",
+    "resultScore": "goog:resultScore",
+    "@vocab": "http://schema.org/",
+    "kg": "http://g.co/kg"
+  },
+  "@type": "ItemList",
+  "itemListElement": []
+}

@@ -25,6 +25,24 @@ module GoogleKnowledgeGraph
       Entity.new(response.body)
     end
 
+    def search query, types: []
+      ensure_api_key!
+
+      response = request(
+        key: api_key,
+        query: query,
+        types: types,
+      )
+
+      return [] unless response.status.success?
+
+      JSON.parse(response.body)['itemListElement']
+        .map{ |item| {
+          entity: Entity.new(item['result']),
+          score: item['resultScore']
+        }}
+    end
+
     private
 
     def ensure_api_key!
