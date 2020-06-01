@@ -1,6 +1,7 @@
 # google knowledge graph client
 
 ![Gem](https://img.shields.io/gem/v/google_knowledge_graph)
+![Codecov](https://img.shields.io/codecov/c/github/ref-wiki/google_knowledge_graph)
 
 A ruby client for Google's knowledge graph to:
 - getting a knowledge entity by id
