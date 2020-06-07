@@ -43,11 +43,11 @@ module GoogleKnowledgeGraph
     end
 
     def description_text
-      detailed_description.dig 'articleBody'
+      detailed_description&.dig 'articleBody'
     end
 
     def description_url
-      detailed_description.dig 'url'
+      detailed_description&.dig 'url'
     end
   end
 end
