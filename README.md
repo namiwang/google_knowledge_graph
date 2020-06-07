@@ -33,11 +33,11 @@ GoogleKnowledgeGraph.api_key = 'foo'
 
 ### getting knowledge entity by id
 
-> google knowledge graph responses entity result with @id like `kg:/m/0dl567`,
-  yet it expects id being `/m/0dl567` when querying the service
+> Google knowledge graph responses entity result with @id like `kg:/m/0dl567`,
+  yet it expects id being `/m/0dl567` when querying the service. You may pass both into `get` and the prefix `kg:` will be automatically removed.
 
 ```
-entity = GoogleKnowledgeGraph.get '/m/05pbsry'
+entity = GoogleKnowledgeGraph.get 'kg:/m/05pbsry'
 
 # the `data` field contains the original payload
 entity.data

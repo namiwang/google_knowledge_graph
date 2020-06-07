@@ -32,17 +32,11 @@ describe GoogleKnowledgeGraph do
         }.to raise_error 'EmptyAPIKey'
       end
 
-      it 'raise error for id starting with `kg:`' do
-        expect {
-          GoogleKnowledgeGraph.get 'kg:/m/05pbsry'
-        }.to raise_error 'InvalidIdStartingWithKG'
-      end
-
       it 'returns an entity' do
         stub_request(:get, 'https://kgsearch.googleapis.com/v1/entities:search?ids=/m/05pbsry&key=foo&limit=1')
           .to_return(status: 200, body: File.read('spec/fixtures/getting_entity.json'))
 
-        entity = GoogleKnowledgeGraph.get '/m/05pbsry'
+        entity = GoogleKnowledgeGraph.get 'kg:/m/05pbsry'
         expect(entity).to be_a GoogleKnowledgeGraph::Entity
         expect(entity.name).to eq 'Community'
       end

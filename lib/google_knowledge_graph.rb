@@ -12,7 +12,7 @@ module GoogleKnowledgeGraph
 
     def get id
       ensure_api_key!
-      raise StandardError.new('InvalidIdStartingWithKG') if id.start_with? 'kg:'
+      id.delete_prefix! 'kg:'
 
       response = request(
         key: api_key,
